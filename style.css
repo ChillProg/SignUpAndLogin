@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sign-up-container {
+	width: 100%;
+	height: 100%;
+	background-image: url(assets/SingUpBg.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sign-up-box {
+	width: 480px;
+	min-width: 480px;
+	background-color: white;
+	border-radius: 24px;
+	padding: 24px 48px;
+	text-align: center;
+}
+
+.sign-up-box img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.sign-up-box h1 {
+	font-weight: 600;
+	font-size: 2rem;
+	color: #111111;
+	line-height: 41px;
+}
+
+.sign-up-box p {
+	font-size: 1rem;
+	color: #333333;
+	margin-bottom: 1.5rem;
+}
+
+.sign-up-box button {
+	width: 100%;
+	margin-bottom: 0.6rem;
+	border-radius: 2rem;
+	cursor: pointer;
+	border: none;
+	font-size: 1.2rem;
+	font-weight: 400 !important;
+	padding: 0.7rem 1rem;
+	transition: ease 0.4s;
+}
+
+.sign-up-box .email-btn {
+	background-color: #111111;
+	color: white;
+}
+
+.sign-up-box .facebook-btn,
+.sign-up-box .google-btn
+{
+	background-color: white;
+	color: #111111;
+	border: solid 1px #111111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sign-up-box button img {
+	height: 2rem;
+	width: 2rem;
+	margin-right: 1rem;
+}
+
+.sign-up-box button:hover {
+	opacity: 0.7;
+	border-color: rgb(104, 104, 104);
+}
+
+.sign-up-box .terms {
+	margin-top: 1.5rem;
+	font-size: 0.8rem;
+	color: #666666;
+}
+
+.sign-up-box .terms a{
+	color: #333333;
+	transition: ease 0.4s;
+}
+
+.sign-up-box .terms a:hover {
+	color: #671b69;
+}
+
+.sign-up-box .login-link {
+	margin-top: 1.5rem;
+	font-size: 1rem;
+	color: #666666;
+}
+
+.sign-up-box .login-link a {
+	color: #333333;
+	transition: ease 0.4s;
+}
+
+.sign-up-box .login-link a:hover {
+	color: #671b69;
+}
+
+.login-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.left-panel {
+	flex: 1;
+	background-image: url('assets/SingUpBg.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 10rem 5rem;
+}
+
+.left-panel img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+
+.left-panel h1 {
+	padding: 0.5rem 0;
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.left-panel p {
+	width: 75%;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+.right-panel {
+	flex: 1;
+	padding: 10rem 5rem;
+	background-color: #fff;
+	color: #333333;
+}
+
+.right-panel h2{
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.right-panel form {
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.right-panel form span {
+	color: #666666;
+	font-size: 1rem;
+	text-align: left;
+}
+
+.right-panel form input {
+	width: 100%;
+	border-radius: 0.8rem;
+	border: solid 1px #66666679;
+	padding: 0.7rem 1.5rem;
+	color: #111111;
+}
+
+.right-panel .password-field div {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+}
+
+.right-panel .show-hide {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.right-panel .material-symbols-outlined {
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.right-panel .forgot-password {
+	text-align: right;
+	color: #111111;
+	margin-bottom: 1.5rem;
+	transition: ease 0.4s;
+}
+	
+.right-panel .forgot-password:hover {
+	color: #671b69;
+}
+
+.right-panel .login-btn {
+	margin-bottom: 0rem;
+}
+
+.or-separator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9rem;
+	color: #666666;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.or-separator::before,
+.or-separator::after {
+	content: "";
+	flex: 1;
+	border-top: 1px solid #cecece;
+	margin: 0 10px;
+}
+
+.right-panel button {
+	width: 100%;
+	margin-bottom: 1rem;
+	border-radius: 2rem;
+	cursor: pointer;
+	border: none;
+	font-size: 1.2rem;
+	font-weight: 400 !important;
+	padding: 0.7rem 1rem;
+	transition: ease 0.8s;
+}
+
+.right-panel .facebook-btn,
+.right-panel .google-btn {
+	background-color: white;
+	color: #111111;
+	border: solid 1px #111111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-panel button img {
+	height: 2rem;
+	width: 2rem;
+	margin-right: 1rem;
+}
+
+.right-panel button:hover {
+	color: white;
+	background-color: #111111;
+}
+
+.right-panel .signup-link {
+	text-align: right;
+	margin-top: 2rem;
+	font-size: 1rem;
+	color: #666666;
+}
+
+.right-panel .signup-link a {
+	color: #333333;
+	margin-left: 0.3rem;
+	transition: ease 0.4s;
+}
+
+.right-panel .signup-link a:hover {
+	color: #671b69;
+}
+
+@media (max-width: 1200px) {
+	.left-panel {
+		display: none;
+	}
+
+	.login-container {
+		background-image: url(assets/SingUpBg.jpg);
+		background-size: cover;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.right-panel {
+		flex: none;
+		width: 560px;
+		min-width: 560px;
+		background-color: white;
+		border-radius: 24px;
+		padding: 24px 48px;
+		text-align: center;
+	}
+}
